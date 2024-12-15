@@ -10,6 +10,7 @@ output:
   header-includes:
   - \usepackage{fontspec}
   - \usepackage{unicode-math}
+  - \usepackage{float}
 always_allow_html: true
 html_document: default
 editor_options: 
@@ -24,8 +25,15 @@ knitr::opts_chunk$set(
   fig.align = 'center',      # Centrer les images
   #out.width = "70%",         # Largeur des images
   fig.show = "hold",         # Maintenir les graphiques dans l'ordre
-  fig.cap = NULL             # Pas de légende par défaut
+  fig.cap = NULL           # Pas de légende par défaut
 )
+# Commande git de supppression du remote : 
+
+# git remote rm origin
+```
+
+```{=tex}
+
 ```
 
 
@@ -1273,13 +1281,11 @@ L’ICAAP produit un **rapport annuel** destiné aux **organes dirigeants** et a
 7. **Tests de résistance** : Des tests réguliers garantissent l’adéquation des fonds propres face à des conditions défavorables.  
 
 
-```{r echo=FALSE, fig.cap="ICAAP" ,fig.align='center',out.width="75%"}
+```{r echo=FALSE, fig.cap="ICAAP" ,fig.align='center',out.width="75%", }
 knitr::include_graphics("Images/ICAAP.jpg")
-
 ```
 
-
-\clearpage
+\newpage
 
 ## Exemple de risque de couveture de crédits :
 
@@ -1293,7 +1299,6 @@ knitr::include_graphics("Images/cata.png")
 
 ```
 
-\clearpage
 
 ### Catégorie B : Banque de détail
 
@@ -1305,6 +1310,7 @@ knitr::include_graphics("Images/catb.png")
 
 ```
 
+\vspace{7cm}
 
 ### Catégorie C : Corporate 
 
@@ -1316,7 +1322,6 @@ knitr::include_graphics("Images/catc.png")
 
 ```
 
-\clearpage
 
 ### Catégorie D : Retail/Detail 
 
@@ -1328,7 +1333,6 @@ knitr::include_graphics("Images/catd.png")
 
 ```
 
-\clearpage
 
 ### Exemple autres catégories : 
 
