@@ -26,6 +26,13 @@ knitr::opts_chunk$set(
   fig.show = "hold",         # Maintenir les graphiques dans l'ordre
   fig.cap = NULL             # Pas de légende par défaut
 )
+# Commande git de supppression du remote : 
+
+# git remote rm origin
+```
+
+```{=tex}
+
 ```
 
 
